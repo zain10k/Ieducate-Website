@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>1ST Website</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="logo">
+            <a href="./index.html"><img src="./Assets/logo-2150297_640.webp" alt="logo"></a>
+        </div>
+        <button class="toggle-btn" onclick="toggleNav()">&#9776;</button>
+        <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./videos/videos.html">Videos</a></li>
+            <li><a href="./login/login.html">Quiz</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" name="search" id="search"  placeholder="Search..."/>
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    
+
+    <div class="body">
+    <section class="background first-section">
+        <div class="box-main">
+            <div class="second-half">
+                <img src="Assets/logo-2150297_640.webp" alt="Logo">
+                <h1>Ieducate</h1>
+            </div>
+            <div class="first-half">
+                <h1>Welcome to Ieducate!</h1>
+                <p class="text-big ">The Change is here</p>
+                <p class="text-small">
+                    This world inhabits 7 billion people. <br>
+                    We need to educate masses. Ieducate is the solution. <br>
+                    Ieducate is the future. Ieducate is the Change.
+                </p>
+                <div class="buttons">
+                    <button class="btn">Watch Videos</button>
+                    <button class="btn">Quiz</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="background">    
+    <section class="section" id="about">
+        <div class="about-box">
+            <h1 class="heading">About Us</h1>
+            <p class="about-image">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Labore, quam.
+                Facere debitis officia voluptatibus alias nisi deserunt. <br>
+                Modi fugiat rem vel praesentium delectus,
+                optio soluta nesciunt sapiente officia odit iusto esse porro!
+                <img src="./Assets/pngtree-vector-information-icon-png-image_1577365.png" alt="about"></p>
+            <p class="text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Aspernatur reiciendis eius omnis sit ducimus, ad quod ut. <br>
+                Ea in, nesciunt eum adipisci at debitis,
+                nemo minima dignissimos autem ad molestiae! <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> 
+                Ullam dolorem veritatis voluptates porro voluptatibus odio totam eligendi temporibus? <br>
+                Labore tenetur at perspiciatis qui,
+                impedit est perferendis sed quasi nihil tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            </p>
+        </div>
+    </section>
+    <section class="page" id="contact">
+        <div class="login-box">
+            <h1>Contact Us</h1>
+            <form>
+        <div>
+            <label for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" placeholder="" required />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required />
+        </div>
+        <div style="display: flex;  justify-content: left;  align-items:center;">
+            <label class="area" for="message">Message:</label>
+            <textarea class="input" id="message" name="message" required></textarea>
+        </div>
+            <input class="btn input" style="color: black;" type="submit" value="Submit" />
+            </form>
+        </div>
+        </section>
+    </div>
+    
+<!-- Footer -->
+    <footer class="footer background">
+        <h2 class="footer-text">All rights reserved by &copy;Ieducate</h2>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

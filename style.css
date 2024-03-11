@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    /* background-color: black; */
+}
+.nav-list{
+    width: 50%;
+/* background-color: rgb(227, 145, 45); */
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+}
+.logo{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.nav-list li{
+list-style: none;
+}
+.nav-list li a:hover{
+color: #c0bdbd;   
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #ffffff;
+    }
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 10px;
+}
+.right-nav{
+    /* background-color: aqua; */
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+#search{
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 100px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
+}
+.btn{
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    background: none;
+    color: #ffffff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
+    
+}
+
+.btn:hover{
+    background-color: #c0bdbd;
+    color: black;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(./Assets/new-york-city-skyline-panorama-sunset-skyscrapers-1920x1080-4645.jpg);
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+
+}
+.first-half{
+    width: 60%;
+}
+.second-half{
+    width: 40%;
+}
+.box-main h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+.box-main .text-small{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.box-main .text-big{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.box-main button{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.box-main img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;  
+}
+
+.about-box{
+    max-width: 80%;
+    color: black;
+    padding: 20px;
+    margin-top: 50px;
+}
+.section{
+    display: flex;
+    justify-content:left;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    background-color: antiquewhite;
+
+}
+.about-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;    
+    float: left;
+    padding: 20px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: left;
+    margin-bottom: 20px;
+    font-size:30px;
+    padding-left: 20px;
+}
+.contact{
+    justify-content: right;
+    padding-bottom: 60px;
+    max-width: 80%;
+}
+.contact img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;    
+    float: right;
+    padding: 20px;
+}
+
+.contact .heading{
+    justify-content: right;
+}
+.contact p{
+    text-align: right;
+}
+.right{
+    padding-right: 20px;
+}
+.body{
+    
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7) url(./Assets/matthew-henry-VviFtDJakYk-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.login-background{
+    background: rgba(0, 0, 0, 0.7) url(./Assets/matthew-henry-VviFtDJakYk-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode:darken;
+    height: 100vh;
+}
+.login-nav{
+    background: rgba(0, 0, 0, 0.7) url(./Assets/matthew-henry-VviFtDJakYk-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    border: none;
+    width: 200px;
+    text-align: center;
+}
+.pass{
+    margin: 0px;
+    padding-right:  10px;
+}
+.pass.label{
+    padding-left: 0px;
+}
+.login-box textarea{
+    width: 80%;
+}
+.login-box  label{
+    padding-right: 10px;
+}
+.login-box .area{
+    padding-right: 10px;
+}
+.login-box > h1{
+    padding: 20px;
+    padding-right: 0px;
+}
+.btn.input{
+    padding-right: 0px;
+    margin-right: 0px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: rgb(35, 35, 35);
+    margin: auto;
+    max-width: 80%;
+    background-color: antiquewhite;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+.subject-btn{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+#start-btn{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: #585757;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.option-btn{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+#next-btn{   
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: #585757;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Add this to your CSS */
+#next-btn {
+    display: none;
+}
+
+#quiz-heading{
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+    .logo {
+        margin-left: 0px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        position: sticky;
+        top: 0;
+        /* background-color: black; */
+    }
+    .nav-list{
+        width: 100%;
+        overflow: hidden;
+        transition: all 0.4s;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu-bar{
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column;
+    }
+    .first-half{
+        width: 100%;
+    }
+    .second-half{
+        width: 100%;
+    }
+    .box-main h1{
+        font-size: 30px;
+    }
+    .box-main .text-small{
+        font-size: 15px;
+    }
+    .box-main .text-big{
+        font-size: 20px;
+    }
+    .box-main button{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .box-main img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;  
+    }
+    .about-box{
+        padding: 10px;
+    }
+    .section{
+        padding-top: 50px;
+    }
+    .about-image img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;    
+        float: left;
+        padding: 10px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .contact img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;    
+        float: right;
+        padding: 10px;
+    }
+    .contact .heading{
+        font-size: 20px;
+    }
+    .contact p{
+        text-align: right;
+    }
+    .login{
+        padding: 10px;
+    }
+    .login-box textarea{
+        width: 100%;
+    }
+    .login-box  label{
+        padding-right: 10px;
+    }
+    .login-box .area{
+        padding-right: 5px;
+    }
+    .login-box > h1{
+        padding: 10px;
+    }
+    .page{
+        padding: 0px;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .nav-list{
+        width: 100%;
+    }
+    .right-nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        margin: 10px;
+    }
+    .btn{
+        margin-right: 20px;
+    }
+    .right{
+        padding-right: 10px;
+    }
+    /* .nav-list li a{
+        font-size: 10px;
+    }
+    .nav-list li{
+        padding: 10px;
+    }
+    .nav-list{
+        padding: 10px;
+    }
+    .nav-list li a:hover{
+        font-size: 10px;
+    } */
+    
+}
+
+
+/* .box-main h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box-main .text-small {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box-main .text-big {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.nav-list li a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+/* Hide the nav list by default */
+/* .nav-list {
+    display: none;
+} */
+
+/* Show the nav list when toggle button is clicked */
+.nav-list.show {
+    display: flex;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+    display: none; /* Hide the button by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .logo{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .toggle-btn {
+        display: block; /* Show the button on smaller screens */
+        color: #ffffff;
+    }
+    .nav-list {
+        display: none; /* Hide the nav list on smaller screens */
+        /* position: absolute; */
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        /* background-color: #333; Adjust background color as needed */
+        width: 100%;
+        padding: 10px 0; /* Adjust padding as needed */
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); Optional: Add box shadow */
+    }
+    .nav-list.show {
+        display: block; /* Show the nav list when toggle button is clicked */
+    }
+    .nav-list li {
+        display: block;
+        text-align: left; /* Center align the list items */
+    }
+    .nav-list li a {
+        display: block;
+        padding: 10px 20px; /* Adjust padding as needed */
+        color: #fff; /* Adjust text color as needed */
+        text-decoration: none;
+    }
+    /* .nav-list li a:hover {
+        background-color: #555; /* Add a hover effect on list items */
+    /* } */ 
+
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar login-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/logo-2150297_640.webp" alt="logo"></a>
+        </div>
+        <button class="toggle-btn" onclick="toggleNav()">&#9776;</button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../videos/videos.html">Videos</a></li>
+            <li><a href="../login/login.html">Quiz</a></li>
+            <li><a href="./quiz.html">Again!</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" name="search" id="search"  placeholder="Search..."/>
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    
+<section class="login">
+    <div class="container login-box">
+        
+        <div class="subject-list" id="subject-container">
+            <h1>Select a Subject</h1>
+            <button class="subject-btn" onclick="selectSubject('Math')">Math</button>
+            <button class="subject-btn" onclick="selectSubject('Science')">Science</button>
+            <button class="subject-btn" onclick="selectSubject('History')">History</button>
+        </div>
+        <div id="quiz-container">
+            <h2 id="quiz-heading" style="display: none;">Quiz</h2>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="timer"></div> <!-- Add this line to display the timer -->
+            <button onclick="nextQuestion()" id="next-btn">Next</button> <!-- Next button -->
+        </div>
+        <!-- <div id="score-container" style="display: none;"> -->
+            <!-- Score container content -->
+        <!-- </div> -->
+        
+        <!-- <div id="subject-container" style="display: none;"> -->
+            <!-- Subject selection content -->
+        <!-- </div> -->
+        
+        <h2 id="quiz-heading" style="display: none;">Quiz</h2>
+        
+        <div id="subject-selection" style="display: none;">
+            <h3>Select a Subject</h3>
+            <button onclick="selectSubject('Math')">Math</button>
+            <button onclick="selectSubject('Science')">Science</button>
+            <button onclick="selectSubject('History')">History</button>
+            <button onclick="startQuiz()" id="start-quiz-btn">Start Quiz</button>
+        </div>
+        
+        <button id="start-btn" onclick="startQuiz()" disabled>Start Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+        </div>
+        <div id="error-msg"></div>
+        <div id="score-container" style="display: none;">
+            <h2>Your Score: <span id="score"></span></h2>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer login-nav">
+    <h2 class="footer-text">All rights reserved by &copy;Ieducate</h2>
+</footer>
+<script src="../script.js"></script>
+    <script src="./quiz.js"></script>
+</body>
+</html>

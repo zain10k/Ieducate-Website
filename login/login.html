@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+    <section class="login">
+    <div class="login-box">
+    <div id="error"></div>
+    <h1>Login</h1>
+    <form id="form" action="../quiz/quiz.html" method="GET">
+    <div class="textbox">
+        <label for="name" class="input">Name</label>
+        <input class="input" id="name" name="name" type="text" required />
+    </div>
+    <div>
+        <label for="password" class="input pass label">Password</label>
+        <input class="input pass" id="password" name="password" type="password" />
+    </div>
+    <button class="btn input" type="submit">Submit</button>
+    </form>
+    </div>
+    </section>
+    <script src="./login.js"></script>
+</body>
+</html>

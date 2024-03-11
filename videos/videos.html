@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Videos</title>
+    <link rel="stylesheet" href="./video.css">
+    <link rel="stylesheet" href="../style.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <nav class="navbar login-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/logo-2150297_640.webp" alt="logo"></a>
+        </div>
+        <button class="toggle-btn" onclick="toggleNav()">&#9776;</button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../videos/videos.html">Videos</a></li>
+            <li><a href="../login/login.html">Quiz</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" name="search" id="search"  placeholder="Search..."/>
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    
+    <section class="login-background">
+    <div class="sidebar">
+        <h2>Subjects</h2>
+        <ul id="subject-list">
+            <li class="btn" onclick="loadVideos('Math')">Math</li>
+            <li class="btn" onclick="loadVideos('Science')">Science</li>
+            <li class="btn" onclick="loadVideos('History')">History</li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <h2 id="subject-title"></h2>
+        <div id="video-player"></div>
+        <button class="btn vid-next" onclick="loadNextVideo()" id="next-button" style="display: none; margin-right: 0px;">Next Video</button>
+    </div>
+    </section>
+    
+<!-- Footer -->
+<footer class="footer login-nav">
+    <h2 class="footer-text">All rights reserved by &copy;Ieducate</h2>
+</footer>
+<script src="../script.js"></script>
+    <script src="./videos.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>
